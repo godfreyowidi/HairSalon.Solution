@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
-    @RenderBody()
+    <nav>
+      <ul>
+        <p>@Html.ActionLink("See all clients", "Index", "Clients")</p>
+        <p>@Html.ActionLink("See all Stylists", "Index", "Stylists")</p>
+      </ul>
+    </nav>
+    <main>
+      @RenderBody()
+    </main>
   </body>
 </html>
