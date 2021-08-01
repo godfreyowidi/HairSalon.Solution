@@ -9,7 +9,7 @@ This web application offers the user an opportunity to interact with Eau Claire'
 * C#
 * ASP.NET Core MVC
 * Entity Framework
-* MySql Database
+* MySql Workbench
 * HTTP RESTful Routing
 * Git/GitHub
 
@@ -34,6 +34,18 @@ _Unzip the downloaded repository into your working directory_
 
 _Open the working directory into your code editor using the command ```code .```_
 
+_Add the file appsettings.json to the project root directory by running the command ```touch appsettings.json```. Click on the file and add the following:_
+```
+{
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-USERNAME-HERE];uid=root;pwd=[YOUR-PASSWORD-HERE];"
+    }
+}
+```
+_This is a connection string and database will change based on which one we are connecting to_
+
+_Because this file will contain sensitive information, it is imperative to add it to ```.gitignore`` file before making any commits_
+
 _Once you have the program open in your code editor, run ```dotnet restore``` inside the production directory to set up the dependencies and tools for the project._
 
 _After the project is sucessfully set up, navigate to the directory in the terminal. Then execute the command ```dotnet run``` or ```dotnet watch run``` to start server_
@@ -43,6 +55,18 @@ _After the project is sucessfully set up, navigate to the directory in the termi
 _Using the terminal, navigate to the directory the project is located using ```cd HairSalon.Solution```_
 
 _Open the working directory in your code editor using the ```code .``` command._
+
+_Add the file appsettings.json to the project root directory by running the command ```touch appsettings.json```. Click on the file and add the following:_
+```
+{
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-USERNAME-HERE];uid=root;pwd=[YOUR-PASSWORD-HERE];"
+    }
+}
+```
+_This is a connection string and database will change based on which one we are connecting to_
+
+_Because this file will contain sensitive information, it is imperative to add it to ```.gitignore`` file before making any commits_
 
 _From the terminal, ```run dotnet restore``` in the terminal to set up the dependencies and tools for the project._
 
@@ -55,6 +79,7 @@ _Execute the commmand ```dotnet run``` or ```dotnet watch run``` to start the se
 _Server is started on either :-_
 
 _http://localhost:5000_
+
 _http://localhost:5001_
 
 _Copy and paste either of the above in the browser to experience the splash page_
