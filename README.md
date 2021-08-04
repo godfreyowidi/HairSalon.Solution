@@ -71,7 +71,7 @@ _You will receive the database name plus the character set and collation of the 
 +----------+----------------------------------------------------------------------------------------------------------------------------------+
 | Database | Create Database                                                                                                                  |
 +----------+----------------------------------------------------------------------------------------------------------------------------------+
-| testdb  | CREATE DATABASE `hair_salondb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */ |
+| hair_salondb  | CREATE DATABASE `hair_salondb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */ |
 +----------+----------------------------------------------------------------------------------------------------------------------------------+
 1 row in set (0.01 sec)
 ```
